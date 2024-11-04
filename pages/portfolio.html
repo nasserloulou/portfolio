@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <header id="home" class="bg-white shadow-md">
+        <div class="navbar">
+            <nav class="container mx-auto flex items-center justify-between p-6">
+                <!-- Logo -->
+                <a href="../index.html" id="logo" class="text-2xl font-bold text-teal-600">Nassr eddine Loulou</a>
+    
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+                    <li><a href="../index.html" class="hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+    
+                <!-- Social Links -->
+                <div class="hidden md:flex space-x-4 text-teal-600">
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin text-2xl"></i></a> <!-- Added LinkedIn Link -->
+                </div>
+    
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 p-4 hidden">
+                <ul class="space-y-4 text-gray-700 font-semibold">
+                    <li><a href="#home" class="block hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="block hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="block hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="block hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="block hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-8 lg:px-16 max-w-5xl">
+            <!-- Section Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">My <span class="text-teal-600">Portfolio</span></h2>
+                <hr class="border-gray-300 mt-4 w-24 mx-auto">
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="itms bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="../image/Capture d’écran 2024-11-02 à 15.43.13.png" alt="Wise Invest" class="w-full h-48 object-cover rounded">
+                    <div class="item-content mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-700">Wise Invest</h3>
+                        <a href="https://wiseinvest.app/" target="_blank" class="text-teal-600 hover:underline">Visit website</a>
+                    </div>
+                </div>
+
+                <!-- Duplicate this block for each additional portfolio item -->
+                <!-- Portfolio Item 2 -->
+                <div class="itms bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="../image/Capture d’écran 2024-11-02 à 15.43.13.png" alt="Wise Invest" class="w-full h-48 object-cover rounded">
+                    <div class="item-content mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-700">Wise Invest</h3>
+                        <a href="https://wiseinvest.app/" target="_blank" class="text-teal-600 hover:underline">Visit website</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="itms bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="../image/Capture d’écran 2024-11-02 à 15.43.13.png" alt="Wise Invest" class="w-full h-48 object-cover rounded">
+                    <div class="item-content mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-700">Wise Invest</h3>
+                        <a href="https://wiseinvest.app/" target="_blank" class="text-teal-600 hover:underline">Visit website</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="itms bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="../image/Capture d’écran 2024-09-14 à 15.51.35.png" alt="Agsad tours" class="w-full h-48 object-cover rounded">
+                    <div class="item-content mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-700">Agsad tours</h3>
+                        <a href="https://agsadtours.com/fr/" target="_blank" class="text-teal-600 hover:underline">Visit website</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="itms bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="../image/Capture d’écran 2024-09-14 à 15.51.35.png" alt="Agsad tours" class="w-full h-48 object-cover rounded">
+                    <div class="item-content mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-700">Agsad tours</h3>
+                        <a href="https://agsadtours.com/fr/" target="_blank" class="text-teal-600 hover:underline">Visit website</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="itms bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="../image/Capture d’écran 2024-09-14 à 15.51.35.png" alt="Agsad tours" class="w-full h-48 object-cover rounded">
+                    <div class="item-content mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-700">Agsad tours</h3>
+                        <a href="https://agsadtours.com/fr/" target="_blank" class="text-teal-600 hover:underline">Visit website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+  
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

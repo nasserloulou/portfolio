@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About Me - Professional Portfolio</title>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased">
+    <header id="home" class="bg-white shadow-md">
+        <div class="navbar">
+            <nav class="container mx-auto flex items-center justify-between p-6">
+                <!-- Logo -->
+                <a href="../index.html" id="logo" class="text-2xl font-bold text-teal-600">Nassr eddine Loulou</a>
+    
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+                    <li><a href="../index.html" class="hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+    
+                <!-- Social Links -->
+                <div class="hidden md:flex space-x-4 text-teal-600">
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin text-2xl"></i></a> <!-- Added LinkedIn Link -->
+                </div>
+    
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 p-4 hidden">
+                <ul class="space-y-4 text-gray-700 font-semibold">
+                    <li><a href="#home" class="block hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="block hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="block hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="block hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="block hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-8 lg:px-16 max-w-4xl">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">About Me</h2>
+                <p class="text-lg text-gray-500">Fullstack Developer | Passionate about High-Quality Code & Scalable Applications</p>
+                <hr class="border-gray-300 mt-4 w-24 mx-auto">
+            </div>
+
+            <div class="mt-12 flex flex-col md:flex-row md:space-x-12">
+                <!-- Left Column: About Content -->
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Hi, I'm <span class="text-teal-600">Nassr Eddine Loulou</span></h3>
+                    <p class="leading-relaxed text-gray-600 mb-4">I'm a full-stack developer with a passion for creating efficient, scalable, and visually engaging web applications. My experience spans across both frontend and backend technologies, enabling me to bring a complete, user-centered perspective to every project.</p>
+                    <p class="leading-relaxed text-gray-600 mb-4">I have a strong foundation in modern web technologies, including HTML5, CSS, JavaScript, PHP, and frameworks like WordPress and Tailwind CSS. With a keen eye for detail and a focus on clean, maintainable code, I am dedicated to building user-friendly experiences that make a real impact.</p>
+                    <p class="leading-relaxed text-gray-600">Currently, I'm expanding my skills in areas like React and Node.js to take on more dynamic and complex challenges.</p>
+                </div>
+
+                <!-- Right Column: Personal Info -->
+                <div class="md:w-1/3 bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <p class="text-lg text-gray-700"><i class="fas fa-user text-teal-600 mr-2"></i><strong>Age:</strong> 21 years</p>
+                    <p class="text-lg text-gray-700 mt-4"><i class="fas fa-envelope text-teal-600 mr-2"></i><strong>Email:</strong> nasserloulou3@gmail.com</p>
+                    <p class="text-lg text-gray-700 mt-4"><i class="fas fa-map-marker-alt text-teal-600 mr-2"></i><strong>Location:</strong> Safi-Morocco</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-8 lg:px-16 max-w-5xl text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+                <i class="fas fa-laptop-code text-teal-600 mr-2"></i> 
+                Skills &amp; <span class="text-teal-600 ml-1">Abilities</span>
+            </h2>
+            <hr class="border-gray-300 w-24 mx-auto mb-10">
+    
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Skill Item -->
+                <div class="item flex flex-col items-center">
+                    <img src="../image/html_original_wordmark_logo_icon_146478.png" alt="HTML5" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">HTML</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/css3-01_icon-icons.com_50918.png" alt="CSS" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">CSS</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/javascript_logo_icon_145155.png" alt="JavaScript" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">JavaScript</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/PHP_icon-icons.com_68990.png" alt="PHP" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">PHP</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/coffeecuplogoJava_5406.png" alt="Java" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">Java</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/wordpress_icon-icons.com_65448-removebg-preview.png" alt="WordPress" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">WordPress</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/c_original_logo_icon_146611.png" alt="C Programming" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">C Programming</p>
+                </div>
+                <div class="item flex flex-col items-center">
+                    <img src="../image/c_sharp_icon_213045 (1).png" alt="C#" class="h-16 mb-4">
+                    <p class="text-lg font-semibold text-gray-700">C#</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+  
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

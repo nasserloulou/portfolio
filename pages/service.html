@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased">
+    <header id="home" class="bg-white shadow-md">
+        <div class="navbar">
+            <nav class="container mx-auto flex items-center justify-between p-6">
+                <!-- Logo -->
+                <a href="../index.html" id="logo" class="text-2xl font-bold text-teal-600">Nassr eddine Loulou</a>
+    
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+                    <li><a href="../index.html" class="hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+    
+                <!-- Social Links -->
+                <div class="hidden md:flex space-x-4 text-teal-600">
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin text-2xl"></i></a> <!-- Added LinkedIn Link -->
+                </div>
+    
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 p-4 hidden">
+                <ul class="space-y-4 text-gray-700 font-semibold">
+                    <li><a href="#home" class="block hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="block hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="block hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="block hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="block hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-8 lg:px-16 max-w-5xl">
+            <!-- Section Heading -->
+            <div class="text-center mb-12">
+                <img src="../image/1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334.png" alt="Services" class="h-16 mx-auto mb-4">
+                <h2 class="text-4xl font-bold text-gray-800">My <span class="text-teal-600">Services</span></h2>
+                <hr class="border-gray-300 mt-4 w-24 mx-auto">
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Item 1 -->
+                <div class="item bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                    <img src="../image/coding_computer_pc_screen_code_icon_193925.png" alt="Web Development" class="h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Web Development</h3>
+                    <p class="text-gray-600">I can build a website using HTML, CSS, and JavaScript.</p>
+                </div>
+                
+                <!-- Service Item 2 -->
+                <div class="item bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                    <img src="../image/1562687-code-computer-creative-html-process-technology-web-development_107058.png" alt="Responsive Design" class="h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Responsive Design</h3>
+                    <p class="text-gray-600">Your website will be 100% responsive on all devices, including tablets and smartphones.</p>
+                </div>
+                
+                <!-- Service Item 3 -->
+                <div class="item bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                    <img src="../image/scienceandfiction-code_99229.png" alt="Creative Design" class="h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Creative Design</h3>
+                    <p class="text-gray-600">I can enhance your current website by adding new, engaging content.</p>
+                </div>
+                
+                <!-- Service Item 4 -->
+                <div class="item bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                    <img src="../image/ideas-icon_31827.png" alt="Web Ideas" class="h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Web Ideas</h3>
+                    <p class="text-gray-600">I can turn your ideas into high-quality projects.</p>
+                </div>
+                
+                <!-- Service Item 5 -->
+                <div class="item bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                    <img src="../image/1458264589_question_quiz_feedback_comments_enquiry_help_support_icon-icons.com_55335.png" alt="Retouch" class="h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Retouch</h3>
+                    <p class="text-gray-600">I can redesign your website to give it a fresh, professional look.</p>
+                </div>
+                
+                <!-- Service Item 6 -->
+                <div class="item bg-gray-50 p-6 rounded-lg shadow-lg text-center">
+                    <img src="../image/support_icon-icons.com_55294.png" alt="Support" class="h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Support</h3>
+                    <p class="text-gray-600">Ongoing support for any changes needed after project delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+  
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

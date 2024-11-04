@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("PvxJVlnAE5TmAKX9x"); // Replace with your EmailJS User ID
+        })();
+
+        function sendEmail(event) {
+    event.preventDefault(); // Prevent the default form submission
+    const button = event.target.querySelector('button[type="submit"]');
+    button.disabled = true; // Disable the button
+    button.textContent = 'Sending...'; // Change button text
+
+    const form = event.target;
+    emailjs.sendForm('service_jqcueje', 'template_9rxgp4j', form)
+        .then((result) => {
+            console.log('Email sent successfully:', result.text);
+            alert('Message sent successfully!');
+            form.reset();
+        }, (error) => {
+            console.error('Error sending email:', error.text);
+            alert('Failed to send message. Please try again later.');
+        })
+        .finally(() => {
+            button.disabled = false; // Re-enable the button
+            button.textContent = 'Send Message'; // Reset button text
+        });
+}
+
+    </script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <header id="home" class="bg-white shadow-md">
+        <div class="navbar">
+            <nav class="container mx-auto flex items-center justify-between p-6">
+                <!-- Logo -->
+                <a href="../index.html" id="logo" class="text-2xl font-bold text-teal-600">Nassr eddine Loulou</a>
+
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+                    <li><a href="../index.html" class="hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+
+                <!-- Social Links -->
+                <div class="hidden md:flex space-x-4 text-teal-600">
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin text-2xl"></i></a>
+                </div>
+
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 p-4 hidden">
+                <ul class="space-y-4 text-gray-700 font-semibold">
+                    <li><a href="#home" class="block hover:text-teal-600 transition">Home</a></li>
+                    <li><a href="./about.html" class="block hover:text-teal-600 transition">About</a></li>
+                    <li><a href="./service.html" class="block hover:text-teal-600 transition">Services</a></li>
+                    <li><a href="./portfolio.html" class="block hover:text-teal-600 transition">Portfolio</a></li>
+                    <li><a href="./contact.html" class="block hover:text-teal-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6 lg:px-8 max-w-3xl">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Contact <span class="text-teal-600">Us</span></h2>
+                <p class="mt-4 text-gray-600">We'd love to hear from you! Please fill out the form below to get in touch.</p>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="bg-white p-8 rounded-lg shadow-lg" onsubmit="sendEmail(event)">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                    <input type="text" id="name" name="from_name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-600" placeholder="Your Name" required>
+                </div>
+            
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                    <input type="email" id="email" name="from_email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-600" placeholder="Your Email" required>
+                </div>
+            
+                <div class="mb-6">
+                    <label for="subject" class="block text-gray-700 font-semibold">Subject</label>
+                    <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-600" placeholder="Subject" required>
+                </div>
+            
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-semibold">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-600" placeholder="Your Message" required></textarea>
+                </div>
+            
+                <div class="text-center">
+                    <button type="submit" class="px-6 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors">Send Message</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>
